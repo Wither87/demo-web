@@ -17,7 +17,7 @@ public class PostsViewController {
 
     @RequestMapping(path = "/", method = RequestMethod.GET)
     public String list(Model model) {
-        model.addAttribute("appName", "Сентябрь горит, убийца плачет");
+        model.addAttribute("appName", "Сентябрь горит, убийца плачет. Никита ест хотдог");
         model.addAttribute("posts", postsService.listAllPosts());
         return "list";
     }
