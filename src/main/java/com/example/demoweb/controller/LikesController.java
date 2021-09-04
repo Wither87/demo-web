@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class LikesController {
 
     @Autowired
-    private LikesService likesService;
+    LikesService likesService;
 
     @ResponseBody
     @RequestMapping(path = "/post/{id}/like", method = RequestMethod.POST)
